@@ -57,7 +57,7 @@ class MCBoard extends WpFramework_Base_0_6 {
 			parent::__construct();
 
 			// Define form handlers
-			$this->load(array('Abstract', 'NotEmpty', 'Integer', 'Set', 'Email', 'Unique'), 'WpFramework_Validators_');
+			$this->load(array('Abstract', 'NotEmpty', 'Integer', 'Set', 'Email'), 'WpFramework_Validators_');
 			
 			// Settings Tab
 			$validators = array();
@@ -91,7 +91,6 @@ class MCBoard extends WpFramework_Base_0_6 {
 			
 			$validators = array();
 			$validators['board_id'][] 	= new WpFramework_Validators_NotEmpty(__('This field is required.', self::NAME_SLUG));
-			$validators['board_id'][] 	= new WpFramework_Validators_Unique(__('This field must be unique.', self::NAME_SLUG), array_keys($boards));
 			
 			$validators['width'][]  = new WpFramework_Validators_Integer(__('Make sure this field is between 100 and 600.', self::NAME_SLUG), 100, 600);
 			$validators['height'][] = new WpFramework_Validators_Integer(__('Make sure this field is between 150 and 1024.', self::NAME_SLUG), 150, 1024);
