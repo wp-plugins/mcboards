@@ -19,7 +19,7 @@ The content will be automatically updated every hour or so, saving the screensho
 
 Once you've created your boards, update their content and insert the provided shortcode in a page or post. That's it!
 
-* How does it work? *
+= How does it work? =
 
 This plugin helps you show your Campaign Archive as an Image Board. These boards can be inserted into any page or post by using the following shortcode:
 [mcboard id="board_id"]
@@ -33,18 +33,6 @@ Once a board is defined, its content must be updated. This is done by clicking i
 Then insert the provided shortcode in any page or post. That's it!
 
 Spanish translation available.
-
-= How does it work? =
-
-This plugin helps you show your Campaign Archive as an Image Board. These boards can be inserted into any page or post by using the following shortcode:
-
-'[mcboard id="board_id"]'
-
-Each board has a set of "conditionals" that must be met by any given campaign in order to be shown in the board: They filter your campaigns.
-
-Additionally, you can specify certain parameters such as the width the of images, their maximum height and number of campaigns to show by page.
-
-Once a board is defined, its content must be updated. This is done by clicking on its update link (found in the Boards tab) OR when someone visits a page or post where this board is present. This is called a front-end update and it could be slow and deteriorating of you user experience so we can't insist enough in that you should update the content of a board whenever you create ir or update it.
 
 == Installation ==
 
