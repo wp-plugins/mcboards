@@ -18,8 +18,8 @@ You can define and include as many MCBoards as you need in any page or post, eac
 The content will be automatically updated every hour or so, saving the screenshots in your own *UPLOADS/mcboards* folder.
 
 Once you've created your boards, update their content and insert the provided shortcode in a page or post. That's it!
-Sections (or tabs)
-How does it work?
+
+* How does it work? *
 
 This plugin helps you show your Campaign Archive as an Image Board. These boards can be inserted into any page or post by using the following shortcode:
 [mcboard id="board_id"]
@@ -28,7 +28,7 @@ Each board has a set of "conditionals" that must be met by any given campaign in
 
 Additionally, you can specify certain parameters such as the width of the images, their maximum height, and number of campaigns to show per page.
 
-Once a board is defined, its content must be updated. This is done by clicking its update link (found in the Boards tab), or when someone visits a page or post where this board is present. This is called a front-end update. It is a slow process that will negatively impact your visitors' user experience. You should update the content of a board whenever you create it or update its properties or conditionals.
+Once a board is defined, its content must be updated. This is done by clicking its update link (found in the Boards tab). You should update the content of a board whenever you create it or update its properties or conditionals.
 
 Then insert the provided shortcode in any page or post. That's it!
 
