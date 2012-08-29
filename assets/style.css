@@ -1,0 +1,164 @@
+.wpframework{
+	position: relative;	
+}
+
+/* Style header */
+.wpframework h3{
+	background: #DFDFDF url(../../../../wp-admin/images/gray-grad.png) repeat-x left top;
+	padding: 10px;
+	text-shadow: 0 1px 0 #FFFFFF;
+	font-size: 12px;
+	border: solid 1px #E3E3E3;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+/* Header toggle button */
+.wpframework h3 a:link, h3 a:visited, h3 a:active{
+	text-shadow: none;
+	background-color: #999;
+	cursor:pointer;
+	display:block;
+	float:left;
+	color:#eee;
+	padding: 0px 4px;
+	width: 10px;
+	text-align: center;
+	font-size: 10px;
+	margin-right: 8px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	text-decoration: none;
+	box-shadow:inset 2px 0 10px #000000;
+	-moz-box-shadow:inset 1px 1px 0px #464646;
+}
+.wpframework h3 a:hover{
+	background-color: #464646;
+	color:#eee;
+}
+
+/* Main layout columns */
+.wpframework #column-main {
+	margin: 0px 315px 0px 0px;
+}
+.wpframework #column-side {
+	position: absolute;
+	top: 52px;
+	right: 0px;
+	width: 300px;
+}
+
+/* Link menu */
+.wpframework ul.menu {
+	border-top: 1px solid #E3E3E3;
+}
+.wpframework ul.menu li {
+	border-bottom: 1px solid #E3E3E3;
+	padding: 0px;
+	margin: 0px;
+}
+.wpframework ul.menu li a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+}
+.wpframework ul.menu li a:hover{
+	background-color:#EAF2FA;
+	color:#333333;	
+}
+
+/* Text formatting */
+.wpframework .extra {
+	color:#6B6B6B;	
+}
+.wpframework .small {
+	font-size: 10px;	
+	line-height: 12px;
+}
+.wpframework blockquote {
+	border-left: 4px solid #656565;
+	padding: 5px 0 5px 10px;
+}
+
+/* Form styling */
+.wpframework label {
+	display:block;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	line-height:1.2em;
+	margin-right:10px;
+	padding-top:4px;
+	width:150px;
+}
+	.wpframework label span {
+		color: #C00;
+		font-size: 10px;
+		padding-left: 4px;
+	}
+.wpframework selec{
+	float: left;	
+}
+.wpframework .form-invalid textarea{
+	border-color:#CC0000 !important;	
+}
+.wpframework .error {
+	color: #c00;
+}
+
+/* Table styling */
+.wpframework table{
+	
+}
+.wpframework table.options{
+	border-top: 1px solid #E3E3E3;
+}
+.wpframework table.options input, .wpframework table.options textarea{
+	border: 1px solid #DFDFDF;
+}
+.wpframework table.options td{
+	padding: 15px 5px;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+.wpframework .success{
+	padding: 10px;
+	margin: 5px 0px;
+	color: #4F8A10;
+	background-color: #DFF2BF;	
+	font-size: 11px;
+}
+
+.wpframework .day-part{
+	width: 13%;	
+	height: 300px;
+	position: relative;
+	margin: 0px 5px 0px 0px;
+	float: left;
+	color: #FFF;
+	border-right:1px solid #E3E3E3;
+}
+.wpframework .day-label{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;	
+	font-size: 9px;
+	color: #464646;
+	font-weight: bold;
+}
+.wpframework .day-in{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 95%;
+	background-color: #70883E;
+	height: 200px;	
+	text-align: center;
+	font-size: 9px;	
+}
+.wpframework .spacer{
+	clear: both;
+	display: block;	
+}
