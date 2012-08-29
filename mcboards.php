@@ -448,7 +448,7 @@ class MCBoard extends WpFramework_Base_0_6 {
 				$hash 			= md5($api);
 				
 				// User Templates, active or inactives, should be cached for one day.
-				$transient_name = MCBoard::transient_name(("mcb_ut_$hash"));
+				$transient_name = MCBoard::transientName(("mcb_ut_$hash"));
 				$cache   		= get_transient($transient_name);
 				if ( empty($cache) ) {
 					$cache = array();
