@@ -4,7 +4,7 @@ Plugin Name: MailChimp Campaigns Boards
 Plugin URI: http://connect.maichimp.com/integrations/mcboards
 Description: Transform your MailChimp Campaign Archive into a Pinterest-like board.
 Author: MC_Will
-Version: 1.0
+Version: 1.01
 Requires at least: 3.0
 */
 	
@@ -114,8 +114,6 @@ class MCBoard extends WpFramework_Base_0_6 {
 		}
 		
 		public function action_init() {
-		    wp_deregister_script('jquery');
-			wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
 			wp_enqueue_script('jquery');
 			
 			$options = MCBoard::$options;
@@ -1054,7 +1052,7 @@ class MCBoard extends WpFramework_Base_0_6 {
         	}
         }
 		/**
-		 * It makes an asyncronous HTTP request to array( __CALL__, 'async_call' ) for 
+		 * It makes an asyncronous HTTP request to array( __CLASS__, 'async_call' ) for 
 		 * a certain board  
 		 *
 		 * @return void

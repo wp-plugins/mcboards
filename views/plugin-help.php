@@ -31,5 +31,5 @@
 </div>
 <h2><?=__('Help! I need help!', MCBoard::NAME_SLUG); ?></h2>
 <div>
-	<p><?= sprintf(__('If you are struggling to make it work, please, visit the <a href="%s" target="_blank">FAQ</a> section of the plugin or send your questions to its <a href="%s" target="_blank">support forum</a>. It\'s the easiest way to get support.',MCBoard::NAME_SLUG),'http://wordpress.org/tags/mcboards/faq/','http://wordpress.org/tags/mcboards'); ?></p>
+	<p><?= sprintf(__('If you are struggling to make it work, please, visit the <a href="%s" target="_blank">FAQ</a> section of the plugin or send your questions to its <a href="%s" target="_blank">support forum</a>. It\'s the easiest way to get support.',MCBoard::NAME_SLUG),'http://wordpress.org/extend/plugins/mcboards/faq/','http://wordpress.org/support/plugin/mcboards'); ?></p>
 </div>

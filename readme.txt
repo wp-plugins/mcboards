@@ -78,6 +78,7 @@ If you are in a rush, you can always update it manually.
 If you find that a part of this plugin isn't working, please don't simply click the Wordpress "It's broken" button. Let us know what's broken in [its support forum](http://wordpress.org/tags/mcboards?forum_id=10) so we can make it better. Our [mind-reading device](http://www.youtube.com/watch?v=cCTlonSwePs) still needs some tweaking.
 
 == Localizations ==
+
 MCBoards is currently localized in the following languages:
 
 * Spanish (es_ES)
@@ -96,6 +97,11 @@ MCBoards is currently localized in the following languages:
 Nothing to report!
 
 == Changelog ==
+
+= 1.01 =
+* FIXED: Removing external link to jquery.
+* FIXED: Links to FAQ and Support Board 
+* ADDED: RSS News icons
 
 = 1.0 =
 * Public release
