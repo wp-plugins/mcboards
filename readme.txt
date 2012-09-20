@@ -98,6 +98,9 @@ Nothing to report!
 
 == Changelog ==
 
+= 1.02 =
+* Replacing Isotope in favor of Masonry
+
 = 1.01 =
 * FIXED: Removing external link to jquery.
 * FIXED: Links to FAQ and Support Board 

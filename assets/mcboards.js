@@ -128,13 +128,9 @@ jQuery(document).ready(function($e) {
                             
                             elem = jQuery(r.elements[i]);                            
                             
-                            $c.append( elem ).isotope( 'addItems', elem );
-	                        $c.isotope( 'appended', elem ); 
-                            $c.isotope({ layoutMode : 'masonry' });
-                            $c.isotope('reloadItems');
-                            $c.isotope('reLayout');
-                            
+                            $c.append( elem ).masonry('appended', elem, true );
                         }
+                        
                         
                         if ( r.elements.length == 0 ) {
                         	jQuery('#mcb_more-' + $scid).wrap('<div></div>').parent().html('<span class="mcb_more_campaigns">' + MCBoard.strNoMoreCampaigns + '</span>');
@@ -148,9 +144,6 @@ jQuery(document).ready(function($e) {
                         		jQuery(this).siblings('.mcb_item').css(OpaqueObj);
                         	}
                         );
-                        
-                        // css(TransparentObj);
-                        
                     } else {
                         alert(r.response);
                     }

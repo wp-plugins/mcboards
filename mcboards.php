@@ -4,7 +4,7 @@ Plugin Name: MailChimp Campaigns Boards
 Plugin URI: http://connect.maichimp.com/integrations/mcboards
 Description: Transform your MailChimp Campaign Archive into a Pinterest-like board.
 Author: MC_Will
-Version: 1.01
+Version: 1.02
 Requires at least: 3.0
 */
 	
@@ -124,9 +124,9 @@ class MCBoard extends WpFramework_Base_0_6 {
 	        wp_register_style( 'mcboard',  $this->plugin_url . '/assets/mcboards.css' );
 	        wp_enqueue_style( 'mcboard' );
 
-			wp_register_script( 'isotope', $this->plugin_url . '/assets/js/jquery.isotope.min.js', 'jquery');
-			wp_enqueue_script('isotope');
-
+	        wp_register_script( 'masonry', $this->plugin_url . '/assets/js/jquery.masonry.min.js', 'jquery');
+			wp_enqueue_script('masonry');
+			
 		    add_shortcode( 'mcboard', array(__CLASS__,'shortcode' ));
 		    
             wp_localize_script( 'mcboard', 'MCBoard', array( 
@@ -570,13 +570,23 @@ class MCBoard extends WpFramework_Base_0_6 {
 			    <div style="clear:both;"></div>
 			    <div id="mcb_loading-'.$board_id.'" class="mcb_loading">&nbsp;</div>
 			    <div style="clear:both;"></div>
-			    <a id="mcb_more-'.$board_id.'" class="mcb_more_campaigns" href="#">More Campaigns</a>			    
+			    <a id="mcb_more-'.$board_id.'" class="mcb_more_campaigns" href="#">More Campaigns</a>
 			    <script>
                     jQuery(document).ready(function($) {
                         var $container = jQuery("#'.$board_id.'");
-                        $container.isotope({
-                            itemSelector: ".mcb_item"
-                        });
+                        
+						$container.imagesLoaded(function(){
+	                        $container.masonry({
+	                            itemSelector: ".mcb_item",
+	                            isAnimated: true,
+							    animationOptions: {
+							      duration: 750,
+							      easing: "linear",
+							      queue: false
+							    }
+	                        });
+	                    });
+	                    
                         jQuery("#'.$board_id.':hover .mcb_item:not(:hover)").live("mouseenter", function () {
                         	jQuery.each(jQuery(this), function () {
 	                        	jQuery(this).css("filter","alpha(opacity=40)");
@@ -584,7 +594,8 @@ class MCBoard extends WpFramework_Base_0_6 {
 	            	            jQuery(this).css("opacity","0.40");
 							});
 						});
-                    });
+						
+					});
 			    </script>
 			    <style>
 					#'.$board_id.':hover .mcb_item:not(:hover) {
@@ -592,7 +603,8 @@ class MCBoard extends WpFramework_Base_0_6 {
 					    -moz-opacity: 0.4;
 					    opacity: 0.4;
 					}
-				</style>';
+				</style>
+				<div style="clear:both;"></div>';
 			    
 			    set_transient($transient_name, $content, 3600 ); // let's cache it 60 minutes...
 			}
