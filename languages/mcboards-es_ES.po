@@ -1,0 +1,555 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MCBoards\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-24 12:01-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Will Castillo <will@mailchimp.com>\n"
+"Language-Team: MailChimp <will@mailchimp.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: mcboards.php:65
+#: mcboards.php:66
+#: mcboards.php:67
+#: mcboards.php:68
+#: mcboards.php:69
+#: mcboards.php:80
+#: mcboards.php:96
+msgid "This field is required."
+msgstr "Este campo es requerido."
+
+#: mcboards.php:71
+msgid "This field must be an integer, greater than the image width used."
+msgstr "Este campo debe ser un entero, mayor que el ancho de la imagen utilizado."
+
+#: mcboards.php:72
+#: mcboards.php:82
+#: mcboards.php:99
+msgid "Make sure this field is between 100 and 600."
+msgstr "Asegúrate que este campo esté entre 100 y 600."
+
+#: mcboards.php:73
+#: mcboards.php:83
+#: mcboards.php:100
+msgid "Make sure this field is between 150 and 1024."
+msgstr "Asegúrate que este campo esté entre 150 y 1024."
+
+#: mcboards.php:74
+#: mcboards.php:84
+#: mcboards.php:101
+msgid "Make sure this field is between 1 and 10."
+msgstr "Asegúrate que este campo esté entre 1 y 10."
+
+#: mcboards.php:85
+#: mcboards.php:102
+msgid "This field should be: regular, plaintext, auto, or rss."
+msgstr "Este campo debe ser: regular, plaintext, auto o rss."
+
+#: mcboards.php:86
+msgid "This field should be: 0, or 1."
+msgstr "Este campo debe ser: 0 o 1."
+
+#: mcboards.php:87
+#: mcboards.php:104
+msgid "This field should be a valid email address."
+msgstr "Este campo debe ser una dirección de correo válida."
+
+#: mcboards.php:97
+msgid "This field must be unique."
+msgstr "Este campo debe ser único."
+
+#: mcboards.php:103
+msgid "This field should be one of: 0, or 1."
+msgstr "Este campo debe ser uno de: 0 o 1."
+
+#: mcboards.php:143
+msgid "Are you sure you want to delete this MCBoard?"
+msgstr "¿Estás seguro que deseas eliminar este MCBoard?"
+
+#: mcboards.php:144
+msgid "Sorry. No more campaigns here."
+msgstr "Lo siento, no hay más campañas aquí."
+
+#: mcboards.php:145
+msgid "Sorry, the Board ID must be unique. This one already exists."
+msgstr "Lo siento, el Board ID debe ser único. Este ya existe."
+
+#: mcboards.php:781
+#: views/plugin-edit.php:51
+#: views/plugin-new.php:55
+msgid "Yes"
+msgstr "Si"
+
+#: mcboards.php:781
+#: views/plugin-edit.php:51
+#: views/plugin-new.php:55
+msgid "No"
+msgstr "No"
+
+#: mcboards.php:796
+#: views/plugin-edit.php:10
+#: views/plugin-new.php:10
+#: views/plugin-index.php:13
+#: views/plugin-index.php:15
+msgid "Settings"
+msgstr "Configuración"
+
+#: views/plugin-edit.php:4
+#: views/plugin-settings.php:4
+#: views/plugin-new.php:4
+msgid "Changes were successfully saved."
+msgstr "Los cambios fueros guardados exitosamente."
+
+#: views/plugin-edit.php:7
+#: views/plugin-settings.php:7
+#: views/plugin-new.php:7
+msgid "<p>Fields marked with <span>*</span> are required.</p>"
+msgstr "<p>Los campos marcados con <span>*</span> son requeridos.</p>"
+
+#: views/plugin-edit.php:13
+#: views/plugin-new.php:13
+msgid "Define the general characteristics of this MCBoard."
+msgstr "Define las características generales de este MCBoard."
+
+#: views/plugin-edit.php:17
+#: views/plugin-new.php:21
+msgid "Image width"
+msgstr "Ancho de la Imagen"
+
+#: views/plugin-edit.php:19
+#: views/plugin-new.php:23
+msgid "Image width for the campaign screenshots."
+msgstr "Ancho de la imagen para las capturas de campañas."
+
+#: views/plugin-edit.php:22
+#: views/plugin-new.php:26
+msgid "Maximum image height"
+msgstr "Altura de imagen máxima"
+
+#: views/plugin-edit.php:24
+#: views/plugin-new.php:28
+msgid "Height where the images will be cropped if needed."
+msgstr "Altura donde las imagenes será truncadas de ser necesario."
+
+#: views/plugin-edit.php:27
+#: views/plugin-new.php:31
+msgid "Campaigns per page"
+msgstr "Campañas por Página"
+
+#: views/plugin-edit.php:29
+#: views/plugin-new.php:33
+msgid "Number of campaigns to show per page."
+msgstr "Número  de campañas a mostrar por página."
+
+#: views/plugin-edit.php:34
+#: views/plugin-new.php:38
+msgid "Conditionals"
+msgstr "Condicionales"
+
+#: views/plugin-edit.php:36
+#: views/plugin-new.php:40
+msgid "Define the criteria to select the campaigns to show.<br/>All conditions must be met in order to display a campaign."
+msgstr "Define los criterios para seleccionar las campañas a mostrar. <br/>Todas las condiciones debe ser cumplidas para poder mostrar una campaña."
+
+#: views/plugin-edit.php:39
+#: views/plugin-new.php:43
+msgid "List"
+msgstr "Lista"
+
+#: views/plugin-edit.php:47
+#: views/plugin-new.php:51
+msgid "Include campaigns sent to this list."
+msgstr "Incluir campañas enviadas a esta lista."
+
+#: views/plugin-edit.php:50
+#: views/plugin-new.php:54
+msgid "Sent to entire list?"
+msgstr "¿Enviado a la lista entera?"
+
+#: views/plugin-edit.php:52
+#: views/plugin-new.php:56
+msgid "If this setting is checked, any campaign sent to a segment of the list will be excluded."
+msgstr "Si esta configuración está marcada, cualquiera campaña enviada a un segmento de su lista será excluida."
+
+#: views/plugin-edit.php:55
+#: views/plugin-new.php:59
+msgid "Campaign Type"
+msgstr "Tipo de Campaña"
+
+#: views/plugin-edit.php:56
+#: views/plugin-new.php:60
+msgid "Regular Campaign"
+msgstr "Campaña Regular"
+
+#: views/plugin-edit.php:56
+#: views/plugin-new.php:60
+msgid "Plain-Text Campaign"
+msgstr "Campaña Texto-Plano"
+
+#: views/plugin-edit.php:56
+#: views/plugin-new.php:60
+msgid "RSS-to-Email Campaign"
+msgstr "Campaña RSS-to-Email"
+
+#: views/plugin-edit.php:56
+#: views/plugin-new.php:60
+msgid "Autoresponder Campaign"
+msgstr "Campaña Autorespuesta"
+
+#: views/plugin-edit.php:57
+#: views/plugin-new.php:61
+msgid "Campaign type of the campaigns."
+msgstr "Tipo de campaña."
+
+#: views/plugin-edit.php:60
+#: views/plugin-new.php:64
+msgid "Folder"
+msgstr "Carpeta"
+
+#: views/plugin-edit.php:64
+#: views/plugin-new.php:68
+msgid "Campaign Folders"
+msgstr "Carpetas de Campaña"
+
+#: views/plugin-edit.php:64
+#: views/plugin-new.php:68
+msgid "Autoresponder Folders"
+msgstr "Carpetas de Autorespuesta"
+
+#: views/plugin-edit.php:76
+#: views/plugin-new.php:80
+msgid "Include campaigns archived in this folder."
+msgstr "Incluir campañas archivadas en esta carpeta."
+
+#: views/plugin-edit.php:79
+#: views/plugin-new.php:83
+msgid "Template"
+msgstr "Plantilla"
+
+#: views/plugin-edit.php:83
+#: views/plugin-new.php:87
+msgid "User Templates"
+msgstr "Plantillas de Usuario"
+
+#: views/plugin-edit.php:84
+#: views/plugin-new.php:88
+msgid "Gallery Templates"
+msgstr "Plantillas de Galería"
+
+#: views/plugin-edit.php:85
+#: views/plugin-new.php:89
+msgid "Base Templates"
+msgstr "Plantillas Base"
+
+#: views/plugin-edit.php:86
+#: views/plugin-new.php:90
+msgid "Inactive Templates"
+msgstr "Plantillas Inactivas"
+
+#: views/plugin-edit.php:100
+#: views/plugin-new.php:104
+msgid "Template used by the campaigns."
+msgstr "Plantilla utilizadas por las campañas."
+
+#: views/plugin-edit.php:103
+#: views/plugin-new.php:107
+msgid "Sending Address"
+msgstr "Dirección de envío"
+
+#: views/plugin-edit.php:105
+#: views/plugin-new.php:109
+msgid "Email address used to send the campaigns."
+msgstr "Correo electrónico usado para enviar las campañas."
+
+#: views/plugin-help.php:1
+msgid "Introduction"
+msgstr "Introducción"
+
+#: views/plugin-help.php:3
+msgid "MCBoards is a different way to show your campaign archive. It displays your campaign links not just as a list of text links, but with actual screenshoots of the campaigns, in <a href=\"http://pinterest.com/\" target=\"_blank\">a way that is pretty popular these days</a>."
+msgstr "MCBoard es una manera diferente de mostrar tu archivo de campañas. Éste muestra los enlaces de tus campañas no sólo como una lista de enlaces sencillos sino con imagenes reales de tus campañas en <a href=\"http://pinterest.com/\" target=\"_blank\">una manera muy popular hoy día</a>."
+
+#: views/plugin-help.php:4
+msgid "You can define and include as many MCBoards as you need in any page or post, each one with its own properties and conditions. These conditions allow you to filter which campaigns to show in a certain board."
+msgstr "Puedes definir e incluir tantos MCBoards como necesites en cualquier página o entrada, cada una con su propio conjunto de características y condiciones. Estas condiciones te permiten filtrar las campañas que deseas mostrar en un tablero particular."
+
+#: views/plugin-help.php:5
+msgid "The content will be automatically updated every hour or so, saving the screenshots in your own <em>UPLOADS/mcboards</em> folder."
+msgstr "El contenido será automáticamente actualizado aproximadamente cada hora, guardando las capturas en tu propia carpeta <em>UPLOADS/mcboards</em>."
+
+#: views/plugin-help.php:6
+msgid "Once you've created your boards, update their content and insert the provided shortcode in a page or post. That's it!"
+msgstr "Una vez que hayas creado tus tableros, actualiza su contenido e inserta su shortcode en una página o entrada. ¡Eso es todo!"
+
+#: views/plugin-help.php:8
+msgid "Sections (or tabs)"
+msgstr "Secciones (o pestañas)"
+
+#: views/plugin-help.php:15
+msgid "How to customize the board?"
+msgstr "¿Cómo personalizo el tablero?"
+
+#: views/plugin-help.php:17
+msgid "If you want to customize the output of this plugin, here's the layout. You can define you own CSS to modify it:"
+msgstr "Si quieres personalizar la salida de este plugin, aquí tienes la estructura de su salida. Puedes definir tu propio CSS para modificarla:"
+
+#: views/plugin-help.php:32
+msgid "Help! I need help!"
+msgstr "¡Ayuda! ¡Necesito Ayuda!"
+
+#: views/plugin-help.php:34
+#, php-format
+msgid "If you are struggling to make it work, please, visit the <a href=\"%s\" target=\"_blank\">FAQ</a> section of the plugin or send your questions to its <a href=\"%s\" target=\"_blank\">support forum</a>. It's the easiest way to get support."
+msgstr "Si estás luchando para hacer funcionar este plugin, visita su <a href=\"%s\" target=\"_blank\">FAQ</a> o envía tus preguntas a su <a href=\"%s\" target=\"_blank\">foro de soporte</a>. Es la manera más fácil de obtener soporte."
+
+#: views/plugin-settings.php:1
+msgid "Default settings"
+msgstr "Configuración Predeterminada"
+
+#: views/plugin-settings.php:11
+msgid "Define the parameters that you will be commonly using in your boards. You can change them later from board to board."
+msgstr "Define los parámetros que usarás comúnmente en tus tableros. Puedes cambiarlos luego de tablero a tablero."
+
+#: views/plugin-settings.php:14
+msgid "MailChimp API Key"
+msgstr "Clave API de MailChimp"
+
+#: views/plugin-settings.php:16
+#, php-format
+msgid "Find it in your <a href=\"%s\" target=\"_blank\">MailChimp API Keys Dashboard</a>."
+msgstr "Encuéntrala en tu <a href=\"%s\" target=\"_blank\">Tablero de Claves API de MailChimp</a>."
+
+#: views/plugin-settings.php:19
+msgid "Column Width"
+msgstr "Ancho de Columna"
+
+#: views/plugin-settings.php:21
+msgid "This is the default width to use. It should be greater than the image width."
+msgstr "Este es el ancho predeterminado a utilizar. Debería ser máyor que el ancho de las imágenes."
+
+#: views/plugin-settings.php:24
+msgid "Image Width"
+msgstr "Ancho de Imagen"
+
+#: views/plugin-settings.php:26
+msgid "This value should be between 100 and 600. It should be less than the column width."
+msgstr "Este valor debe estar entre 100 y 600 y ser menor que el ancho de la columna."
+
+#: views/plugin-settings.php:29
+msgid "Maximum Image Height"
+msgstr "Altura de Imagen Máxima"
+
+#: views/plugin-settings.php:31
+msgid "When a campaign is larger than this threshold, it will be cropped to this value. Should be an integer between 150 and 1024."
+msgstr "Cuando una campaña es mayor a este límite, será truncada en este valor. Debería ser un entero entre 150 y 1024."
+
+#: views/plugin-new.php:1
+#: views/plugin-index.php:25
+#: views/plugin-index.php:47
+#: views/plugin-index.php:50
+#: views/plugin-index.php:75
+#: views/plugin-index.php:78
+msgid "Create a New MCBoard"
+msgstr "Crear un Nuevo MCBoard"
+
+#: views/plugin-new.php:16
+msgid "Board ID"
+msgstr "Board ID"
+
+#: views/plugin-new.php:18
+msgid "Must be unique. Only letters and numbers, dashes, and underscores."
+msgstr "Debe ser único. Sólo letras, números, guión y piso o guión bajo."
+
+#: views/plugin-index.php:13
+#: views/sidebar/boards.php:1
+msgid "Boards"
+msgstr "Tableros"
+
+#: views/plugin-index.php:30
+msgid "Edit Board"
+msgstr "Editar Tablero"
+
+#: views/plugin-index.php:33
+msgid "Help"
+msgstr "Ayuda"
+
+#: views/plugin-index.php:52
+#: views/plugin-index.php:80
+msgid "Save Changes"
+msgstr "Guardar Cambios"
+
+#: views/sidebar/edit.php:1
+msgid "Edit a Board"
+msgstr "Editar un Tablero"
+
+#: views/sidebar/edit.php:2
+msgid "You can edit any field of an existing board except <em>Board ID</em> or <em>Image Width</em>."
+msgstr "Puedes editar casi cualquier campo de un tablero existente excepto su <em>Board ID</em> o su <em>Ancho de Imagen</em>."
+
+#: views/sidebar/edit.php:3
+#: views/sidebar/new.php:4
+msgid "You should update the content of the board after creating or changing any of its properties to ensure that the campaigns being shown are in line with the latest parameters and conditionals you've defined."
+msgstr "Es altamente recomendable actualizar el contenido del tablero luego de crearlo o de haber cambiado cualquiera de sus propiedades. Esto asegurará que las campañas mostradas están en línea con los últimos parámetros y condicionales que definiste."
+
+#: views/sidebar/edit.php:4
+#: views/sidebar/new.php:5
+msgid "<em>Settings</em> defines the look &amp; feel of the board while <em>Conditionals</em> defines the criteria to filter the campaigns. Keep in mind that all defined conditions must be met by a given campaign in order to be shown by the board."
+msgstr "<em>Configuración</em> define el visual de un tablero mientras que los <em>Condicionales</em> definen los criterios para filtrar las campañas. Ten en cuanta que todas las condiciones definidas deben ser cubiertas por una campaña dada para que ésta pueda ser mostrada por el trablero."
+
+#: views/sidebar/new.php:1
+msgid "Create a New Board"
+msgstr "Crear un Nuevo Tablero"
+
+#: views/sidebar/new.php:2
+msgid "This is the page where you can create new boards. The most important parameters are <em>Board ID</em> and <em>Image Width</em>. Once created, they can't be changed."
+msgstr "Esta es la página donde creas nuevos tableros. Los parámetros más importante son su <em>Board ID</em> y su <em>Ancho de Imagen</em>. Una vez creado el tablero, estos valores no pueden ser cambiados."
+
+#: views/sidebar/new.php:3
+msgid "The Board ID must be unique and contain only letters, numbers, dashes, and underscores."
+msgstr "El Board ID debe ser único y contener sólo letras, números, guiones y pisos o guiones bajos."
+
+#: views/sidebar/boards.php:2
+msgid "You can browse your boards from this section. You can edit any board, update its content, or delete it."
+msgstr "Puedes desplazarte entre tus tableros desde esta sección. Puedes editar un tablero, actualizar su contenido o eliminarlos."
+
+#: views/sidebar/boards.php:3
+msgid "You can also create new boards by clicking on the <em>Create a New Board</em> button. Be sure to <em>update</em> its content once it's created: It will reduce the load time of your pages on the front-end."
+msgstr "También puedes crear nuevos tableros haciendo click en el botón <em>Crear un Nuevo Tablero</em>. Asegúrate de <em>actualizar</em> su contenido una vez creado: Esto reducirá el tiempo de carga de las páginas de tu sitio web."
+
+#: views/sidebar/boards.php:4
+msgid "After that, they will be automatically updated every hour or so."
+msgstr "Luego de esto, serán automáticamente actualizados aproximadamente cada hora."
+
+#: views/sidebar/settings.php:1
+msgid "How does it work?"
+msgstr "¿Cómo funciona?"
+
+#: views/sidebar/settings.php:3
+msgid "This plugin helps you show your Campaign Archive as an <em>Image Board</em>. These boards can be inserted into any page or post by using the following shortcode:"
+msgstr "Este plugin te ayuda a mostrar tu Archivo de Campañas como un <em>Tablero de Imágenes</em>. Estos tableros pueden ser insertados en cualquier página o entrada utilizando el siguiente shortcode:"
+
+#: views/sidebar/settings.php:5
+msgid "Each board has a set of \"conditionals\" that must be met by any given campaign in order to be shown on the board. They filter your campaigns."
+msgstr "Cada tablero tiene un conjunto de \"condicionales\"  que deben ser cumplidos por cualquier campaña para poder ser incluida en el tablero: En otras palabras, éstos filtran tus campañas."
+
+#: views/sidebar/settings.php:6
+msgid "Additionally, you can specify certain parameters such as the width of the images, their maximum height, and number of campaigns to show per page."
+msgstr "Adicionalmente, puedes especificar ciertos parámetros como el ancho de las imágenes, su altura máxima y el número de campañas a mostrar por página."
+
+#: views/sidebar/settings.php:7
+msgid "Once a board is defined, its content must be <em>updated</em>. This is done by clicking its <em>update</em> link (found in the Boards tab), or when someone visits a page or post where this board is present. This is called a <em>front-end update</em>. It is a slow process that will negatively impact your visitors' user experience. You should update the content of a board whenever you create it or update its properties or conditionals."
+msgstr "Una vez que un tablero es definido, su contenido debe ser <em>actualizado</em>. Esto se hace mediante un click en su enlace <em>actualizar</em> (el cual se encuentra en la pestaña Tableros) O cuando alguien visita una página o entrada donde está presente este tablero. Esto es llamado una <em>actualización por visitante</em> y podría ser lento además de deteriorar la experiencia de tus usuarios, por lo tanto no podemos insistir lo suficiente en que deberías actualizar el contenido de los tableros cada vez que los crees o edites."
+
+#: views/sidebar/default.php:2
+msgid "News from MailChimp..."
+msgstr "Noticias desde MailChimp..."
+
+#: views/sidebar/default.php:32
+msgid "Latest from Mandrill..."
+msgstr "Lo último sobre Mandrill..."
+
+#: library/wptable/boards.php:39
+msgid "ID"
+msgstr "ID"
+
+#: library/wptable/boards.php:41
+msgid "Max-Height"
+msgstr "Altura Máxima"
+
+#: library/wptable/boards.php:42
+msgid "Page Size"
+msgstr "Tamaño de Página"
+
+#: library/wptable/boards.php:73
+msgid "Type"
+msgstr "Tipo"
+
+#: library/wptable/boards.php:76
+msgid "Email"
+msgstr "Correo Electrónico"
+
+#: library/wptable/boards.php:84
+msgid "AND"
+msgstr "Y"
+
+#: library/wptable/boards.php:87
+msgid "<span class=\"mcb_conditional_field\">Campaigns</span> were sent to the <span class=\"mcb_conditional_value\">Entire List</span> (not a segment of it)"
+msgstr "Las <span class=\"mcb_conditional_field\">Campañas</span> fueron enviadas a su <span class=\"mcb_conditional_value\">Lista Entera</span> (no un segmento de esta)"
+
+#: library/wptable/boards.php:89
+msgid "is"
+msgstr "es"
+
+#: library/wptable/boards.php:92
+msgid "Shortcode:"
+msgstr "Shortcode:"
+
+#: library/wptable/boards.php:183
+#, php-format
+msgid "<strong>Never</strong> <a href=\"%s\">Do it now!</a>"
+msgstr "<strong>Nunca</strong> <a href=\"%s\">¡Házlo Ahora!</a>"
+
+#: library/wptable/boards.php:188
+msgid "Updating..."
+msgstr "Actualizando..."
+
+#: library/wptable/boards.php:192
+msgid "Last Update:"
+msgstr "Actualizado:"
+
+#: library/wptable/boards.php:196
+#: library/wptable/boards.php:204
+msgid "Edit"
+msgstr "Editar"
+
+#: library/wptable/boards.php:204
+msgid "Edit this board"
+msgstr "Editar este tablero"
+
+#: library/wptable/boards.php:205
+msgid "Update content"
+msgstr "Actualizar Contenido"
+
+#: library/wptable/boards.php:205
+msgid "Update"
+msgstr "Actualizar"
+
+#: library/wptable/boards.php:206
+msgid "Delete this board"
+msgstr "Eliminar este Tablero"
+
+#: library/wptable/boards.php:206
+msgid "Delete"
+msgstr "Eliminar"
+
+#~ msgid "This field should be one of: regular, plaintext, auto, or rss."
+#~ msgstr "Este campo debe ser: regular, plaintext, auto o rss."
+#~ msgid ""
+#~ "Number of campaigns to show per page. Try to keep it as low as possible: "
+#~ "5-6 is a good number."
+#~ msgstr ""
+#~ "Número de Campañas a mostrar por página. Intenta mantenerlo tan bajo como "
+#~ "sea posible: 5-6 es un buen número."
+#~ msgid "Sent from..."
+#~ msgstr "Enviado por..."
+#~ msgid "Website URL"
+#~ msgstr "URL del Sitio Web"
+#~ msgid "Fill in the url of the website."
+#~ msgstr "Ingresar el URL del sitio web."
+#~ msgid "Year"
+#~ msgstr "Año"
+#~ msgid "When did you made this item?"
+#~ msgstr "¿Cuando creaste este item?"
+#~ msgid "Text"
+#~ msgstr "Texto"
+#~ msgid "Text to show"
+#~ msgstr "Texto a mostrar"
+

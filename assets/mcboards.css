@@ -1,0 +1,193 @@
+.mcb_item_social {
+	position: absolute !important; 
+	top:50px !important; 
+	left: 5px !important; 
+	z-index:1 !important;
+}
+/*
+.pin-it-button {
+	position: absolute !important; 
+	top:50px !important; 
+	left: 5px !important; 
+	z-index:1 !important;
+}
+.like-it-button {
+	position: absolute !important; 
+	top: 75px !important; 
+	left: 5px !important; 
+	z-index:1 !important;
+}
+.tweet-it-button {
+	position: absolute !important; 
+	top: 100px !important; 
+	left: 5px !important; 
+	z-index:1 !important;
+}
+.plus-it-button {
+	position: absolute !important; 
+	top: 125px !important; 
+	left: 5px !important; 
+	z-index:1 !important;
+}
+*/
+.mcbnews_header {
+    background: url("img/rss_icon.gif") no-repeat scroll 0 0 transparent;
+    padding-left: 30px;
+    line-height: 20px;
+}
+.mcbnews {
+    background: url("img/FreddieHead.png") no-repeat bottom right #FFFFCC;
+    border: 1px solid yellow;
+    float: right;
+    padding: 15px;
+    margin-top: 15px;
+    padding-bottom: 80px;
+}
+.mcb_mandrill {
+    background: url("img/MandrillHead.png") no-repeat bottom right #FFFFCC;
+}
+.mcbnews ul li a {
+    color: #000;
+}
+
+#nav-tab-help {
+		float: right;
+		margin-right: 23%;
+}
+
+.mcb_loading {
+	float: left;
+	width: 100%;
+	height: 18px;
+	margin-top: -20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;	
+}
+	
+th.column-id, td.column-id, th.column-shortcode, td.column-shortcode {
+	width: 250px;
+}
+th.column-width, td.column-width, th.column-height, td.column-height, th.column-count, td.column-count {
+	width: 100px;
+}
+
+span.mcb_no_more_campaigns {
+	color: #777777;
+}
+
+span.mcb_conditional_field {
+	font-style: italic;
+	color: blue;
+}
+span.mcb_conditional_value {
+	font-style: italic;
+	color: brown;
+}
+
+.mcb_container {
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    padding: 5px;
+    height: auto;
+}
+
+.mcb_item {
+    margin: 5px;
+    background: none repeat scroll 0 0 transparent;
+    border-top-right-radius: 1.2em;
+    color: #222222;
+    float: left;
+    position: relative;
+    height: auto;
+}
+
+.mcb_item_data {
+    background-color: #dddddd; 
+    margin: -6px 0 0 0; 
+    font-family: Helvetica, Verdana, sans-serif;
+    font-size: 12px; 
+    padding: 4px; 
+    border: 1px solid #cccccc;
+}
+.mcb_item_img {
+    height: auto;
+    overflow: hidden;
+}
+
+.mcb_item_img a {
+	z-index:0;
+}
+.mcb_item_img a img{
+    border: 1px dotted #cccccc;
+    filter:alpha(opacity=85);
+    -moz-opacity: 0.85;
+    opacity: 0.85;
+}
+
+.mcb_item_img a:hover img{
+    border: 1px dotted #777777;
+    filter:alpha(opacity=100);
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+}
+
+.mcb_more_campaigns {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    text-align: center;
+	background-color: #DDDDDD;
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    font-size: 1.1em;
+    color: #555555;
+    
+    -moz-border-radius: 1em 1em 2em 2em;
+	border-radius: 1em 1em 2em 2em;
+	
+	filter:alpha(opacity=85);
+    -moz-opacity: 0.85;
+    opacity: 0.85;	
+}
+
+.mcb_more_campaigns:hover {
+	filter:alpha(opacity=100);
+    -moz-opacity: 1.00;
+    opacity: 1.00;
+    text-decoration: none;
+}
+
+.mcb_hidden {
+    display: none;
+}
+
+/**** Masonry Transitions ****/
+
+.masonry,
+.masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+
