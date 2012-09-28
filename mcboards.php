@@ -4,7 +4,7 @@ Plugin Name: MailChimp Campaigns Boards
 Plugin URI: http://connect.maichimp.com/integrations/mcboards
 Description: Transform your MailChimp Campaign Archive into a Pinterest-like board.
 Author: MC_Will
-Version: 1.02
+Version: 1.03
 Requires at least: 3.0
 */
 	
@@ -651,7 +651,7 @@ class MCBoard extends WpFramework_Base_0_6 {
 	        $screenshot 		= self::getLocalScreenshot( $screenshot_hash );
 	        if ( $force || empty($screenshot) || !file_exists( $upload_dir['baseurl'] . '/'.self::NAME_SLUG.'/' . $uid.'-'.$c['id'].'-'.$width . '.jpg' ) ) {
 
-        	    self::$force 	= !empty($screenshot);
+	        	self::$force 	= !empty($screenshot);
 		        $remote_screenshot = MCBoard::getRemoteScreenshot($archive_url, $width, 0, $dc);
 		        self::$force 	= false;
 		        
@@ -659,22 +659,21 @@ class MCBoard extends WpFramework_Base_0_6 {
 
 		        if ($upload_dir) {
 		            if ( !is_dir($upload_dir['basedir'] . '/'.self::NAME_SLUG.'/') ) mkdir( $upload_dir['basedir'] . '/'.self::NAME_SLUG.'/', 0777, true );
-
-                                $fp = fopen($upload_dir['basedir'] . '/'.self::NAME_SLUG.'/' . $uid.'-'.$c['id'].'-'.$width . '.jpg', "w");
-                                
-                                fwrite($fp, file_get_contents($remote_screenshot));
-                                fclose($fp);
-                                
-                                $size = getimagesize($upload_dir['basedir'] . '/'.self::NAME_SLUG.'/' . $uid.'-'.$c['id'].'-'.$width . '.jpg');
-                                
-		            $screenshot = $upload_dir['baseurl'] . '/'.self::NAME_SLUG.'/' . $uid.'-'.$c['id'].'-'.$width . '.jpg';
-		            
-        		    self::saveLocalScreenshot($screenshot_hash, $screenshot);
+	            	$response = wp_remote_get( $remote_screenshot );
+					if( !is_wp_error( $response ) && $response['response']['code'] == 200) {
+		            	$fp = fopen($upload_dir['basedir'] . '/'.self::NAME_SLUG.'/' . $uid.'-'.$c['id'].'-'.$width . '.jpg', "w");
+						fwrite($fp, $response['body']);
+                        fclose($fp);
+                        
+		            	$size = getimagesize($upload_dir['basedir'] . '/'.self::NAME_SLUG.'/' . $uid.'-'.$c['id'].'-'.$width . '.jpg');
+			            $screenshot = $upload_dir['baseurl'] . '/'.self::NAME_SLUG.'/' . $uid.'-'.$c['id'].'-'.$width . '.jpg';
+	        		    self::saveLocalScreenshot($screenshot_hash, $screenshot);
+					}
         	    }
         	    if ( empty($screenshot) ) $screenshot = $remote_screenshot;
         	    
 	        }
-	        
+	        	        
 	        $size = isset($size[3]) ? $size[3] : 'width="'.$width.'"';
 	        
                         $date = strtotime($c['send_time']) + (get_option('gmt_offset') * 3600);

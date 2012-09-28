@@ -98,6 +98,9 @@ Nothing to report!
 
 == Changelog ==
 
+= 1.03 =
+* Using wp_remote_get instead of file_get_contents
+
 = 1.02 =
 * Replacing Isotope in favor of Masonry
 
