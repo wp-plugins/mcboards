@@ -98,6 +98,9 @@ Nothing to report!
 
 == Changelog ==
 
+= 1.04 =
+* FIXED: Changing the label 'More Campaigns' to just 'More'. Less is more, ya know. 
+
 = 1.03 =
 * Using wp_remote_get instead of file_get_contents
 

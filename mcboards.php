@@ -4,7 +4,7 @@ Plugin Name: MailChimp Campaigns Boards
 Plugin URI: http://connect.maichimp.com/integrations/mcboards
 Description: Transform your MailChimp Campaign Archive into a Pinterest-like board.
 Author: MC_Will
-Version: 1.03
+Version: 1.04
 Requires at least: 3.0
 */
 	
@@ -78,7 +78,7 @@ class MCBoard extends WpFramework_Base_0_6 {
 			
 			$validators['width'][]  = new WpFramework_Validators_Integer(__('Make sure this field is between 100 and 600.', self::NAME_SLUG), 100, 600);
 			$validators['height'][] = new WpFramework_Validators_Integer(__('Make sure this field is between 150 and 1024.', self::NAME_SLUG), 150, 1024);
-			$validators['count'][]  = new WpFramework_Validators_Integer(__('Make sure this field is between 1 and 10.', self::NAME_SLUG), 1, 10);
+			$validators['count'][]  = new WpFramework_Validators_Integer(__('Make sure this field is between 1 and 50.', self::NAME_SLUG), 1, 50);
 			$validators['type'][]   = new WpFramework_Validators_Set(__('This field should be: regular, plaintext, auto, or rss.', self::NAME_SLUG), array('regular','plaintext','rss','auto'));
 			$validators['entire_list'][]   = new WpFramework_Validators_Set(__('This field should be: 0, or 1.', self::NAME_SLUG), array('0','1'));
 			$validators['email'][]   = new WpFramework_Validators_Email(__('This field should be a valid email address.', self::NAME_SLUG));
@@ -570,7 +570,7 @@ class MCBoard extends WpFramework_Base_0_6 {
 			    <div style="clear:both;"></div>
 			    <div id="mcb_loading-'.$board_id.'" class="mcb_loading">&nbsp;</div>
 			    <div style="clear:both;"></div>
-			    <a id="mcb_more-'.$board_id.'" class="mcb_more_campaigns" href="#">More Campaigns</a>
+			    <a id="mcb_more-'.$board_id.'" class="mcb_more_campaigns" href="#">'.__('More', MCBoard::NAME_SLUG).'</a>
 			    <script>
                     jQuery(document).ready(function($) {
                         var $container = jQuery("#'.$board_id.'");
@@ -693,7 +693,7 @@ class MCBoard extends WpFramework_Base_0_6 {
 	        
 	        $tweetit 	= 'http://twitter.com/share?url='.urlencode($c['archive_url']).'&text='.urlencode(addslashes($subject)).'&count=none';
 	        $pinit 		= 'http://pinterest.com/pin/create/button/?url='.urlencode($c['archive_url']).'&media='.urlencode(MCBoard::getRemoteScreenshot($archive_url, 450, 0, $dc)).'&description='.urlencode(addslashes($subject));
-	        
+
 	        $cache 		= '
 	            <div class="mcb_item" style="max-width: '.($width+8).'px !important;" >
 	               <div class="mcb_item_img" style="max-height: '.$height.'px !important;">
@@ -716,7 +716,7 @@ class MCBoard extends WpFramework_Base_0_6 {
 	           </div>';
 	           
 	        set_transient($transient_name, $cache, 365 * 86400); // let's cache it a year...
-            
+
             return $cache;
 		}
 
